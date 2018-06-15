@@ -1,0 +1,102 @@
+/*
+    Hi! This website is open source at https://github.com/ambersnow/portfolio
+    #FCC107 is Amber. ;)
+*/
+
+/* general nick nacks */
+body {
+    background: #424242;
+    font-family: "Roboto", sans-serif;
+    color: white;
+    overflow-x: hidden;
+}
+
+/* colors */
+.accent {
+    background: #FCC107;
+}
+
+.accent-text {
+    color: #FCC107;
+}
+
+/* text formatting */
+.white-on-black {
+    color: white;
+    background: black;
+    background: rgba(0,0,0,0.5);
+    padding: 2px 7.5px;
+    font-weight: 900;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+.black-on-white {
+    color: #212121;
+    background: white;
+    background: rgba(255,255,255,0.5);
+    padding: 2px 7.5px;
+    font-weight: 900;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+.image-sub {
+    opacity: 0.75;
+    font-style: italic;
+}
+
+/* Banners */
+.banner {
+    width: 100vw;
+    padding: 5px 15px;
+    background: rgba(0,0,0,0.25);
+    padding: 0;
+}
+
+.banner.index {
+    background: url('../assets/main_banner_backdrop.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.banner > .container {
+    padding: 0;
+}
+
+.banner > .container > h2 {
+    margin: 0;
+}
+
+.banner.full {
+    height: 100vh;
+    padding: 15px 30px;
+}
+
+.banner.mid {
+    height: 50vh;
+}
+
+.banner > .container > i.material-icons {
+    bottom: 15px;
+    left: 47%;
+    position: absolute;
+    font-size: 48px;
+    opacity: 0.75;
+    animation-name: bounce-up-and-down;
+    animation-iteration-count: infinite;
+    animation-duration: 5s;
+}
+
+@keyframes bounce-up-and-down {
+    0% {
+        bottom: 0;
+    }
+    50% {
+        bottom: 30px;
+    }
+    100% {
+        bottom: 0;
+    }
+}
