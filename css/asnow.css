@@ -51,6 +51,10 @@ body {
     display: inline-block;
 }
 
+.white-on-black.slim, .black-on-white.slim, .text-on-accent.slim {
+    padding: 2px;
+}
+
 .text-on-accent > .material-icons {
     font-size: 120%;
 }
@@ -71,11 +75,16 @@ body {
     margin: 0;
 }
 
+/* icon formatting */
+.icon-header {
+    font-size: 64px;
+}
+
 /* Banners */
 .banner {
     width: 100vw;
     padding: 5px 15px;
-    background: rgba(0,0,0,0.25);
+    background: rgba(0,0,0,0.1);
     padding: 0;
 }
 
@@ -101,6 +110,11 @@ body {
 
 .banner.mid {
     height: 50vh;
+}
+
+.banner.small {
+    min-height: 64px;
+    padding: 5px;
 }
 
 .banner > .container > i.material-icons {
